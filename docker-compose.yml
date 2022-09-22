@@ -1,0 +1,19 @@
+version: "3"
+services:
+  slack_app:
+    build: 
+      context: ./app_name/
+    container_name: app_name
+    restart: always
+    networks:
+      - bridged_net
+    command: python3 app.py  
+    environment:
+      - SLACK_APP_TOKEN
+      - SLACK_BOT_TOKEN
+      - SLACK_USER_TOKEN
+      
+networks:
+  bridged_net:
+    name: bridged_net
+    driver: bridge

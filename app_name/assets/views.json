@@ -1,0 +1,45 @@
+{
+    "example_view": {
+        "type": "modal",
+        "callback_id": "example_view",
+        "title": {
+            "type": "plain_text",
+            "text": "Example Form"
+        },
+        "submit": {
+            "type": "plain_text",
+            "text": "Submit"
+        },
+        "close": {
+            "type": "plain_text",
+            "text": "Cancel"
+        },
+        "blocks": [
+            {
+                "type": "input",
+                "block_id": "input1_block",
+                "element": {
+                    "type": "plain_text_input",
+                    "action_id": "input1_action"
+                },
+                "label": {
+                    "type": "plain_text",
+                    "text": "Input1"
+                }
+            },
+            {
+                "type": "input",
+                "block_id": "input2_block",
+                "element": {
+                    "type": "plain_text_input",
+                    "action_id": "input2_action",
+                    "multiline": true
+                },
+                "label": {
+                    "type": "plain_text",
+                    "text": "Input2"
+                }
+            }
+        ]
+    }
+}
