@@ -1,7 +1,7 @@
 # Slack Boilerplate
 ## Docker 
  Execute `docker-compose --env-file ./app_name/.env up` to build and start the docker container.  
- `docker-compose --force-recreate && docker-compose up` to rebuild the container after making changes to app.py
+ `docker-compose up --force-recreate` to rebuild the container after making changes to app.py
 ## Tips
 When your app uses blockkit views for home pages, shortcut modals, etc -  
 store each view's JSON in `./assets/views.json` with the property as the view name, and the value as the view's json.  
